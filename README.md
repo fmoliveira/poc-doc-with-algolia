@@ -10,7 +10,9 @@ Make a copy of `.env.example` as `.env` and input your Algolia credentials.
 
 Modify the file `content/docs.json` to update the content displayed on the sample docs page. This file just illustrates that in a real world scenario we'll have to consolidate all the content to be pushed to Algolia API in order to make it searchable.
 
-To push the contents of this file to Algolia API, run `yarn push-algolia`.
+To push the contents of this file to Algolia API, run `yarn push-algolia`. You can find this script on `scripts/push-algolia.js`.
+
+The search component can be found on `components/SearchBar.js`.
 
 Then start the project with `yarn dev` and go to http://localhost:3000 to use the search UI.
 
