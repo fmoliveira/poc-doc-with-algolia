@@ -1,0 +1,80 @@
+[
+  {
+    "title": "useForm",
+    "text": "useForm also takes optional arguments. The following example demonstrates all of the arguments with their default values.",
+    "children": [
+      {
+        "title": "register",
+        "text": "This method allows you to register an input/select Ref and apply validation rules into React Hook Form."
+      },
+      {
+        "title": "unregister",
+        "text": "This method allows you to unregister a single input or an array of inputs."
+      },
+      {
+        "title": "errors",
+        "text": "Object containing form errors and error messages corresponding to each field."
+      },
+      {
+        "title": "watch",
+        "text": "This will watch specified inputs and return their values. It is useful for determining what to render."
+      },
+      {
+        "title": "handleSubmit",
+        "text": "This function will pass the form data when form validation is successful and can be invoked remotely as well."
+      },
+      {
+        "title": "reset",
+        "text": "This function will reset the fields' values and errors within the form. By supplying omitResetState, you have the freedom to only reset specific parts of the state. You can pass values as an optional argument to reset your form into the assigned default values."
+      },
+      {
+        "title": "setError",
+        "text": "The function allows you to manually set one or more errors."
+      },
+      {
+        "title": "clearErrors",
+        "text": "Resets all errors."
+      },
+      {
+        "title": "setValue",
+        "text": "This function allows you to dynamically set the value of a registered field. At the same time, it tries to avoid unnecessary re-rerenders. Only the following conditions will trigger a re-render:"
+      },
+      {
+        "title": "getValues",
+        "text": "An optimized helper for reading form values. The difference between watch and getValues is that getValues will not trigger re-renders or subscribe to input changes."
+      },
+      {
+        "title": "trigger",
+        "text": "Manually triggers form validation."
+      },
+      {
+        "title": "control",
+        "text": "This object is made for React Hook Form's Controller component, which contains methods for registering a controlled component into React Hook Form."
+      },
+      {
+        "title": "formState",
+        "text": "This object contains information about the form state."
+      }
+    ]
+  },
+  {
+    "title": "Controller",
+    "text": "React Hook Form embraces uncontrolled components and native inputs, however it's hard to avoid working with external controlled component such as React-Select, AntD and Material-UI. This wrapper component will make it easier for you to work with them."
+  },
+  {
+    "title": "ErrorMessage",
+    "text": "A simple component to render associated input's error message."
+  },
+  {
+    "title": "useFormContext",
+    "text": "Hook function that allows you to access the form context. useFormContext is intended to be used in deeply nested structures, where it would become inconvenient to pass the context as a prop."
+  },
+  {
+    "title": "useWatch",
+    "text": "Behaves similarly to the watch API, however, this will isolate re-rendering at the component level and potentially result in better performance for your application."
+  },
+  {
+    "title": "useFieldArray",
+    "text": "A custom hook for working with uncontrolled Field Arrays (dynamic inputs). The motivation behind this hook is to provide better user experience and form performance. You can watch this short video to compare controlled vs uncontrolled Field Array."
+  }
+]
