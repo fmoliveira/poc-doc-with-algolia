@@ -1,28 +1,24 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-import docs from './docs.json'
+import docs from '../content/docs.json'
 
 const INDENT_SIZE = 40;
 
 const Documentation = ({ items, indent = 0 }) =>
-  items.map(item => {
-    const slug = item.title.replace(/ /g, '_');
-    
-    return (
-      <div>
-        <a id={slug} href={`#${slug}`}>
-          <h3>{item.title}</h3>
-          <p>{item.text}</p>
-        </a>
-        {item.children && (
-          <div style={{ marginLeft: indent + INDENT_SIZE}}>
-            <Documentation items={item.children} indent={indent} />
-          </div>
-        )}
-      </div>
-    )
-  })
+  items.map(item => (
+    <div>
+        <a id={item.slug} href={`#${item.slug}`}>
+        <h3>{item.title}</h3>
+        <p>{item.text}</p>
+      </a>
+      {item.children && (
+        <div style={{ marginLeft: indent + INDENT_SIZE}}>
+          <Documentation items={item.children} indent={indent} />
+        </div>
+      )}
+    </div>
+  ))
 
 export default function Home() {
   return (
