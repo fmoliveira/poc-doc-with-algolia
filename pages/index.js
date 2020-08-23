@@ -1,7 +1,9 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 import docs from '../content/docs.json'
+
+import SearchBar from '../components/SearchBar';
+import styles from '../styles/Home.module.css'
 
 const INDENT_SIZE = 40;
 
@@ -24,7 +26,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Poc Doc</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -35,6 +37,8 @@ export default function Home() {
           </a>
         </h1>
 
+        <SearchBar/>
+    
         <p className={styles.description}>
           Proof of concept of integrating a single page doc with Algolia Search
         </p>

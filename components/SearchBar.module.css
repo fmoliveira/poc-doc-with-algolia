@@ -1,0 +1,38 @@
+.container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchInput {
+  width: 320px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.resultsWrapper {
+  position: relative;
+}
+
+.resultsBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border: 1px solid #999999;
+}
+
+.hitsList {
+  width: 320px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.hitText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 1rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
